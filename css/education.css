@@ -1,0 +1,13 @@
+/* Melhorar a distribuição do texto */
+.education-institution,
+.education-course,
+.education-date {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Dar um estilo diferente para a data */
+.education-date {
+  color: var(--theme-color-subtext0);
+  font-weight: bold;
+}

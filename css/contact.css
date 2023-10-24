@@ -1,0 +1,7 @@
+.contact > div {
+  padding: 10px; /* Separaçã, melhor leitura */
+}
+
+input {
+  width: 100%; /* Pegar toda a área disponível */
+}

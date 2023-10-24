@@ -1,0 +1,63 @@
+<!DOCTYPE html5>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="./index.js"></script>
+  </head>
+
+  <body>
+    <!-- Header da página (navegação) -->
+    <header>
+      <div class="navigation-bar">
+        <div class="navigation-name">Luna de Guido</div>
+        <span class="navigation-spacer"></span>
+        <div>
+          <nav>
+            <a
+              class="navigation-link"
+              name="navigation-hyperlink"
+              href="#"
+              onclick="navigate('about')"
+              id="about"
+              >Sobre mim</a
+            >
+            <a
+              class="navigation-link"
+              name="navigation-hyperlink"
+              href="#"
+              onclick="navigate('education')"
+              id="education"
+              >Formação</a
+            >
+            <a
+              class="navigation-link"
+              name="navigation-hyperlink"
+              href="#"
+              onclick="navigate('portifolio')"
+              id="portifolio"
+              >Portifólio</a
+            >
+            <a
+              class="navigation-link"
+              name="navigation-hyperlink"
+              href="#"
+              onclick="navigate('contact')"
+              id="contact"
+              >Contato</a
+            >
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Conteúdo principal da página -->
+    <main>
+      <div class="content-holder">
+        <!-- Estou colocanco o conteúdo das páginas dentro desse div  -->
+        <div id="main-content" class="card"></div>
+      </div>
+    </main>
+  </body>
+</html>

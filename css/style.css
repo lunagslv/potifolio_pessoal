@@ -1,0 +1,111 @@
+@import "./about.css";
+@import "./education.css";
+@import "./portifolio.css";
+@import "./contact.css";
+
+/* Definir cores para serem utilizadas */
+/* Tema catppuccin mocha */
+:root {
+  --theme-color-rosewater: #f5e0dc;
+  --theme-color-flamingo: #f2cdcd;
+  --theme-color-pink: #f5c2e7;
+  --theme-color-mauve: #cba6f7;
+  --theme-color-red: #f38ba8;
+  --theme-color-maroon: #eba0ac;
+  --theme-color-peach: #fab387;
+  --theme-color-yellow: #f9e2af;
+  --theme-color-green: #a6e3a1;
+  --theme-color-teal: #94e2d5;
+  --theme-color-sky: #89dceb;
+  --theme-color-sapphire: #74c7ec;
+  --theme-color-blue: #89b4fa;
+  --theme-color-lavender: #b4befe;
+  --theme-color-text: #cdd6f4;
+  --theme-color-subtext1: #bac2de;
+  --theme-color-subtext0: #a6adc8;
+  --theme-color-overlay2: #9399b2;
+  --theme-color-overlay1: #7f849c;
+  --theme-color-overlay0: #6c7086;
+  --theme-color-surface2: #585b70;
+  --theme-color-surface1: #45475a;
+  --theme-color-surface0: #313244;
+  --theme-color-base: #1e1e2e;
+  --theme-color-mantle: #181825;
+  --theme-color-crust: #11111b;
+}
+
+/* Retirando os padrões da tag a */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Altura de 100% do tamanho da janela do browser para o body e html */
+html,
+body {
+  height: 100%;
+}
+/* Definição de alguns padrão do body - consistência */
+body {
+  font-size: 16px;
+  margin: 0;
+  place-items: center;
+  box-sizing: border-box;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Como o conteúdo deve ser apresentado */
+.content-holder {
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+/* Elemento para apresentar as informações como se  */
+/* estivesse em um cartão */
+.card {
+  padding: 40px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 0rem;
+  box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* Barra de navegação */
+.navigation-bar {
+  display: flex;
+  background: var(--theme-color-rosewater);
+  padding: 20px;
+}
+
+/* Propriedades do nome na barra de navegação */
+.navigation-bar .navigation-name {
+  color: var(--theme-color-base);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Espaçador da barra de navegação (Nome <- espaçador -> Links) */
+.navigation-spacer {
+  flex: 1 1 auto;
+}
+
+/* Links da barra de navegação */
+.navigation-link {
+  color: var(--theme-color-crust);
+  margin-left: 15px;
+}
+
+/* Link ativo */
+.current-page-link,
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--theme-color-blue);
+  font-weight: bold;
+}

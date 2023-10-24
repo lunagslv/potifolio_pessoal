@@ -1,0 +1,14 @@
+/* Estou repetindo código, mas é para ter mais flexibilidade */
+/* Melhorar a distribuição do texto */
+.portifolio-company,
+.portifolio-role,
+.portifolio-date {
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Estilo diferente para a data */
+.portifolio-date {
+  color: var(--theme-color-subtext0);
+  font-weight: bold;
+}
